@@ -13,6 +13,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <li class="menu-item">
                 <a href="/src/throttle/">Throttle</a>
             </li>
+            <li class="menu-item">
+                <a href="/src/pub-sub/">Pub-Sub pattern</a>
+            </li>
         </ul>
     </nav>
   </section>
