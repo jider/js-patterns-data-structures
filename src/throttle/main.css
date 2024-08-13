@@ -1,0 +1,46 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  font-size: 1.6rem;
+  height: 100vh;
+  place-content: center;
+}
+
+.container {
+  background-color: #ededed;
+  border: 0.2rem solid #333;
+  border-radius: 0.4rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.mouse-location {
+  align-items: center;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.result-container {
+  margin-block: .5rem;
+}

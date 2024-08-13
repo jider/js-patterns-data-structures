@@ -1,0 +1,61 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 0.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #274c77;
+  box-sizing: border-box;
+  display: grid;
+  font-size: 1.6rem;
+  height: 100vh;
+  place-content: center;
+}
+
+a {
+  color: #274c77;
+  text-decoration: none;
+}
+
+.main-menu {
+  background-color: #e7ecef;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  width: 50vw;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+  }
+
+  & .menu-item {
+    background-color: #a3cef1;
+    border: 2px solid #274c77;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+  }
+
+  & .menu-item:hover {
+    background-color: #6096ba;
+  }
+
+  & .menu-item:hover a {
+    color: #e7ecef;
+  }
+}

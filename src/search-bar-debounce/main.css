@@ -1,0 +1,74 @@
+:root {
+    --user-card-size: 240px;
+    font-family: "Open Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.5;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+label {
+    font-weight: bold;
+}
+input {
+    padding-inline: .25rem;
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--user-card-size), 1fr));
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.user-card {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    background-color: cornsilk;
+    border: 0.2rem solid #333;
+    border-radius: 0.2rem;
+}
+.avatar {
+    width: 3rem;
+    background-color: #eee;
+    border: 1px solid #333;
+    border-radius: 0.2rem;
+}
+.user-body {
+    flex: 1
+}
+.user-body > .name {
+    margin-bottom: 0.25rem;
+}
+.user-body > .email {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.hide {
+    display: none;
+}
